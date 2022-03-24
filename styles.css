@@ -15,3 +15,9 @@ body {
     overflow: hidden;
     background: linear-gradient(#CB356B, #BD3F32);
 }
+
+app {
+    background: #fff;
+    padding: 20px;
+    width: 600px;
+}
