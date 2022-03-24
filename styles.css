@@ -29,3 +29,10 @@ body {
     padding: 20px;
     text-align: center;
 }
+
+.app__content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
