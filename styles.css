@@ -36,3 +36,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.app__footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
