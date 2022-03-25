@@ -49,3 +49,10 @@ body {
     flex-direction: column;
     margin-bottom: 10px;
 }
+
+.input label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 3px;
+    color: #acacac;
+}
