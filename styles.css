@@ -92,3 +92,11 @@ body {
 .hide {
     display: none!important;
 }
+
+.btn {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    margin-bottom: 0;
+}
