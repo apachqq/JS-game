@@ -126,4 +126,6 @@ body {
 
 .btn:active {
     transition: transform .1s ease-in-out,box-shadow .1s ease-in-out!important;
+    transform: none!important;
+    box-shadow: none!important;
 }
