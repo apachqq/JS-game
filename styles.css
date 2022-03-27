@@ -129,3 +129,8 @@ body {
     transform: none!important;
     box-shadow: none!important;
 }
+
+.btn:hover {
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+    transform: translateY(-1px);
+}
