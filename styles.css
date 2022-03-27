@@ -112,4 +112,7 @@ body {
     background: #fad64e;
     color: #3f3f3f;
     border: none;
+    border-radius: 2.8rem;
+    transition: transform .2s ease-in-out,box-shadow .2s ease-in-out,-webkit-transform .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+    will-change: transform;
 }
