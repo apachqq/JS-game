@@ -104,4 +104,8 @@ body {
     font-size: 1rem;
     line-height: 1.3rem;
     text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
 }
