@@ -118,7 +118,8 @@ body {
 }
 
 .btn:disabled {
-    background: #ccc !important;
+    background: #ccc!important;
     border: 1px solid #ccc;
     color: #000;
+    cursor: not-allowed;
 }
