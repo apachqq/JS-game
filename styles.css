@@ -68,4 +68,10 @@ body {
     padding: .8rem 1rem;
     font-size: inherit;
     font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4;
+    color: #000;
+    background: #fff none;
+    border: 1px solid #999;
+    border-radius: 5px;
 }
