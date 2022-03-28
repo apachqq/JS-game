@@ -11,5 +11,6 @@ function startGame() {
 }
 
 function renderBox() {
-
+    $game.innerHTML = ''
+    let box = document.createElement('div')
 }
