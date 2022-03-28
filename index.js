@@ -22,6 +22,9 @@ function handleBoxClick(event) {
 function renderBox() {
     $game.innerHTML = ''
     let box = document.createElement('div')
+    let boxSize = getRandom(30, 100)
+    let gameSize = $game.getBoundingClientRect()
+    let maxTop = gameSize.height - boxSize
 
     box.style.height = box.style.width = '50px'
     box.style.position = 'absolute'
