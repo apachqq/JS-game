@@ -1,6 +1,8 @@
 let $start = document.querySelector('#start')
 let $game = document.querySelector('#game')
 
+let score = 0
+
 $start.addEventListener('click', startGame)
 
 function startGame() {
@@ -8,6 +10,13 @@ function startGame() {
     $start.classList.add('hide')
 
     renderBox()
+}
+
+function handleBoxClick(event) {
+    if (event.target.dataset.box) {
+        score++
+        renderBox()
+    }
 }
 
 function renderBox() {
