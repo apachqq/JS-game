@@ -25,6 +25,7 @@ function renderBox() {
     let boxSize = getRandom(30, 100)
     let gameSize = $game.getBoundingClientRect()
     let maxTop = gameSize.height - boxSize
+    let maxLeft = gameSize.width - boxSize
 
     box.style.height = box.style.width = '50px'
     box.style.position = 'absolute'
@@ -36,4 +37,8 @@ function renderBox() {
 
     $game.insertAdjacentElement('afterbegin', box)
 
+}
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
 }
