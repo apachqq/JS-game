@@ -13,4 +13,15 @@ function startGame() {
 function renderBox() {
     $game.innerHTML = ''
     let box = document.createElement('div')
+
+    box.style.height = box.style.width = '50px'
+    box.style.position = 'absolute'
+    box.style.backgroundColor = '#000'
+    box.style.top = '50px'
+    box.style.left = '70px'
+    box.style.cursor = 'pointer'
+    box.setAttribute('data-box', 'true')
+
+    $game.insertAdjacentElement('afterbegin', box)
+
 }
