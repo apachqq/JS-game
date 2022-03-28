@@ -4,6 +4,7 @@ let $game = document.querySelector('#game')
 let score = 0
 
 $start.addEventListener('click', startGame)
+$game.addEventListener('click', handleBoxClick)
 
 function startGame() {
     $game.style.backgroundColor = '#fff'
