@@ -1,6 +1,9 @@
 let $start = document.querySelector('#start')
 let $game = document.querySelector('#game')
 let $time = document.querySelector('#time')
+let $result = document.querySelector('#result')
+let $timeHeader = document.querySelector('#time-header')
+let $resultHeader = document.querySelector('#result-header')
 
 let score = 0
 let isGameStarted = false
