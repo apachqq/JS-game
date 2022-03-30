@@ -33,6 +33,10 @@ function endGame() {
 }
 
 function handleBoxClick(event) {
+    if (!isGameStarted) {
+        return
+    }
+
     if (event.target.dataset.box) {
         score++
         renderBox()
