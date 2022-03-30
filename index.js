@@ -1,10 +1,13 @@
 let $start = document.querySelector('#start')
 let $game = document.querySelector('#game')
+let $time = document.querySelector('#time')
 
 let score = 0
+let isGameStarted = false
 
 $start.addEventListener('click', startGame)
 $game.addEventListener('click', handleBoxClick)
+
 
 function startGame() {
     $game.style.backgroundColor = '#fff'
