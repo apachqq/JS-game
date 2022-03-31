@@ -13,6 +13,10 @@ $game.addEventListener('click', handleBoxClick)
 
 
 function startGame() {
+    score = 0
+    setGameTime()
+    $timeHeader.classList.remove('hide')
+    $resultHeader.classList.add('hide')
     isGameStarted = true
     $game.style.backgroundColor = '#fff'
     $start.classList.add('hide')
@@ -29,6 +33,10 @@ function startGame() {
     }, 100)
 
     renderBox()
+}
+
+function setGameScore() {
+    $result.textContent = score.toString()
 }
 
 function endGame() {
