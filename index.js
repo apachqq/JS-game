@@ -4,13 +4,22 @@ let $time = document.querySelector('#time')
 let $result = document.querySelector('#result')
 let $timeHeader = document.querySelector('#time-header')
 let $resultHeader = document.querySelector('#result-header')
+let $gameTime = document.querySelector('#game-time')
 
 let score = 0
 let isGameStarted = false
 
 $start.addEventListener('click', startGame)
 $game.addEventListener('click', handleBoxClick)
+$gameTime.addEventListener('input', setGameTime)
 
+function show($el) {
+    $el.classList.remove('hide')
+}
+
+function hide($el) {
+    $el.classList.add('hide')
+}
 
 function startGame() {
     score = 0
