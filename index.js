@@ -46,6 +46,12 @@ function setGameTime() {
 
 function endGame() {
     isGameStarted = false
+    setGameScore()
+    $start.classList.remove('hide')
+    $game.innerHTML = ''
+    $game.style.backgroundColor = '#ccc'
+    $timeHeader.classList.add('hide')
+    $resultHeader.classList.remove('hide')
 }
 
 function handleBoxClick(event) {
