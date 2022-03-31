@@ -6,6 +6,7 @@ let $timeHeader = document.querySelector('#time-header')
 let $resultHeader = document.querySelector('#result-header')
 let $gameTime = document.querySelector('#game-time')
 
+let colors = ['#CB356B', '#BD3F32', '#3A1C71', '#D76D77', '#283c86', '#45a247', '#8e44ad', '#155799', '#159957', '#000046', '#1CB5E0', '#2F80ED']
 let score = 0
 let isGameStarted = false
 
@@ -85,11 +86,13 @@ function renderBox() {
     let maxTop = gameSize.height - boxSize
     let maxLeft = gameSize.width - boxSize
 
-    box.style.height = box.style.width = '50px'
+    let randomColorIndex = getRandom(0, colors.length)
+
+    box.style.height = box.style.width = boxSize + 'px'
     box.style.position = 'absolute'
-    box.style.backgroundColor = '#000'
-    box.style.top = '50px'
-    box.style.left = '70px'
+    box.style.backgroundColor = colors[randomColorIndex]
+    box.style.top = getRandom(0, maxTop) + 'px'
+    box.style.left = getRandom(0, maxLeft) + 'px'
     box.style.cursor = 'pointer'
     box.setAttribute('data-box', 'true')
 
