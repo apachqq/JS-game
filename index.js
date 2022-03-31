@@ -39,6 +39,11 @@ function setGameScore() {
     $result.textContent = score.toString()
 }
 
+function setGameTime() {
+    let time = 5
+    $time.textContent = time.toFixed(1)
+}
+
 function endGame() {
     isGameStarted = false
 }
